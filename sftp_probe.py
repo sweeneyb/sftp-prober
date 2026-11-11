@@ -5,6 +5,7 @@ import argparse
 import logging
 import math
 import socket
+import sys
 import threading
 import time
 
@@ -102,6 +103,7 @@ def main():
         level=logging.INFO,
         format="%(asctime)s %(levelname)s %(message)s",
         datefmt="%Y-%m-%d %H:%M:%S",
+        stream=sys.stdout,
     )
 
     try:
